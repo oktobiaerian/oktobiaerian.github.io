@@ -1,16 +1,24 @@
 header {
-  background-color: #333;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
+    background-color: #1966BE;
+    padding: 15px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Container Size*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .header-container nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .header-container nav a:hover {
-  color: #ffa;
+    color: #ffa;
 }
