@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Oktobia Erian - GitHub Pages</title>
-    </head>
-    <body>
-        <div id="header"></div>
-            <script>
-            fetch('components/header.html')
-                .then(res => res.text())
-                .then(data => document.getElementById('header').innerHTML = data);
-            </script>
-    </body>
+<head>
+    <title>Oktobia Erian - GitHub Pages</title>
+</head>
+<body>
+    <div id="header"></div>
+        <script>
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        </script>
+
+    <article>This is some content.</article>
+
+    <div id="footer"></div>
+        <script>
+          // Load footer HTML
+          fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => {
+              document.getElementById('footer').innerHTML = data;
+              // Set current year
+              document.getElementById('year').textContent = new Date().getFullYear();
+            });
+        </script>
+
+</body>
 </html>
